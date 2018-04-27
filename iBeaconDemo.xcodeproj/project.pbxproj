@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A1E2AC512092BE2900486590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC502092BE2900486590 /* AppDelegate.swift */; };
-		A1E2AC532092BE2900486590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC522092BE2900486590 /* ViewController.swift */; };
-		A1E2AC562092BE2900486590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E2AC542092BE2900486590 /* Main.storyboard */; };
 		A1E2AC582092BE2900486590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E2AC572092BE2900486590 /* Assets.xcassets */; };
 		A1E2AC5B2092BE2900486590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E2AC592092BE2900486590 /* LaunchScreen.storyboard */; };
 		A1E2AC662092BE2A00486590 /* iBeaconDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC652092BE2A00486590 /* iBeaconDemoTests.swift */; };
 		A1E2AC712092BE2A00486590 /* iBeaconDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC702092BE2A00486590 /* iBeaconDemoUITests.swift */; };
+		A1E2AC842092BFE800486590 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC832092BFE800486590 /* AddItemViewController.swift */; };
+		A1E2AC862092C00000486590 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC852092C00000486590 /* ItemsViewController.swift */; };
+		A1E2AC882092C02100486590 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC872092C02100486590 /* IconCell.swift */; };
+		A1E2AC8A2092C02E00486590 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC892092C02E00486590 /* ItemCell.swift */; };
+		A1E2AC8E2092C07500486590 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC8D2092C07500486590 /* Item.swift */; };
+		A1E2AC902092C08400486590 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2AC8F2092C08400486590 /* Icons.swift */; };
+		A1E2AC922092D0DD00486590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E2AC912092D0DD00486590 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +41,6 @@
 /* Begin PBXFileReference section */
 		A1E2AC4D2092BE2900486590 /* iBeaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E2AC502092BE2900486590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1E2AC522092BE2900486590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1E2AC552092BE2900486590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1E2AC572092BE2900486590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1E2AC5A2092BE2900486590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E2AC5C2092BE2900486590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +50,13 @@
 		A1E2AC6C2092BE2A00486590 /* iBeaconDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E2AC702092BE2A00486590 /* iBeaconDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconDemoUITests.swift; sourceTree = "<group>"; };
 		A1E2AC722092BE2A00486590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E2AC832092BFE800486590 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		A1E2AC852092C00000486590 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		A1E2AC872092C02100486590 /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		A1E2AC892092C02E00486590 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		A1E2AC8D2092C07500486590 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A1E2AC8F2092C08400486590 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		A1E2AC912092D0DD00486590 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,12 @@
 		A1E2AC4F2092BE2900486590 /* iBeaconDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A1E2AC822092BFC400486590 /* Classes */,
+				A1E2AC802092BF9E00486590 /* Custom Cells */,
+				A1E2AC7F2092BF9500486590 /* ViewControllers */,
 				A1E2AC502092BE2900486590 /* AppDelegate.swift */,
-				A1E2AC522092BE2900486590 /* ViewController.swift */,
-				A1E2AC542092BE2900486590 /* Main.storyboard */,
-				A1E2AC572092BE2900486590 /* Assets.xcassets */,
-				A1E2AC592092BE2900486590 /* LaunchScreen.storyboard */,
-				A1E2AC5C2092BE2900486590 /* Info.plist */,
+				A1E2AC912092D0DD00486590 /* Main.storyboard */,
+				A1E2AC7E2092BE5600486590 /* Supporting Files */,
 			);
 			path = iBeaconDemo;
 			sourceTree = "<group>";
@@ -123,6 +133,43 @@
 				A1E2AC722092BE2A00486590 /* Info.plist */,
 			);
 			path = iBeaconDemoUITests;
+			sourceTree = "<group>";
+		};
+		A1E2AC7E2092BE5600486590 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2AC572092BE2900486590 /* Assets.xcassets */,
+				A1E2AC592092BE2900486590 /* LaunchScreen.storyboard */,
+				A1E2AC5C2092BE2900486590 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1E2AC7F2092BF9500486590 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2AC832092BFE800486590 /* AddItemViewController.swift */,
+				A1E2AC852092C00000486590 /* ItemsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A1E2AC802092BF9E00486590 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2AC872092C02100486590 /* IconCell.swift */,
+				A1E2AC892092C02E00486590 /* ItemCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		A1E2AC822092BFC400486590 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2AC8F2092C08400486590 /* Icons.swift */,
+				A1E2AC8D2092C07500486590 /* Item.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +240,12 @@
 				TargetAttributes = {
 					A1E2AC4C2092BE2900486590 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A1E2AC602092BE2A00486590 = {
 						CreatedOnToolsVersion = 9.2;
@@ -232,9 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E2AC922092D0DD00486590 /* Main.storyboard in Resources */,
 				A1E2AC5B2092BE2900486590 /* LaunchScreen.storyboard in Resources */,
 				A1E2AC582092BE2900486590 /* Assets.xcassets in Resources */,
-				A1E2AC562092BE2900486590 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E2AC532092BE2900486590 /* ViewController.swift in Sources */,
+				A1E2AC882092C02100486590 /* IconCell.swift in Sources */,
+				A1E2AC902092C08400486590 /* Icons.swift in Sources */,
+				A1E2AC8A2092C02E00486590 /* ItemCell.swift in Sources */,
+				A1E2AC8E2092C07500486590 /* Item.swift in Sources */,
+				A1E2AC862092C00000486590 /* ItemsViewController.swift in Sources */,
 				A1E2AC512092BE2900486590 /* AppDelegate.swift in Sources */,
+				A1E2AC842092BFE800486590 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A1E2AC542092BE2900486590 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1E2AC552092BE2900486590 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A1E2AC592092BE2900486590 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -426,12 +475,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NSXWD9BJ9H;
 				INFOPLIST_FILE = iBeaconDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kydz-wx.iBeaconDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b11c1fa-eff3-48d2-91d0-0af2ebdac6d7";
+				PROVISIONING_PROFILE_SPECIFIER = Seven_development;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +493,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NSXWD9BJ9H;
 				INFOPLIST_FILE = iBeaconDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kydz-wx.iBeaconDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b11c1fa-eff3-48d2-91d0-0af2ebdac6d7";
+				PROVISIONING_PROFILE_SPECIFIER = Seven_development;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

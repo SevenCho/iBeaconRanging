@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import CoreLocation
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var locationManager = CLLocationManager()
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 注册通知
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in }
+        
+        // 设置代理
+        locationManager.delegate = self
+        
         return true
     }
 
@@ -42,5 +53,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate: CLLocationManagerDelegate
+{
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        guard region is CLBeaconRegion else {
+            return
+        }
+        let content = UNMutableNotificationContent()
+        content.title = "Forget Me Not"
+        content.body = "Are you forgetting something?"
+        content.sound = .default()
+        
+        let request = UNNotificationRequest(identifier: "iBeaconDemo", content: content, trigger: nil)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
 }
 
